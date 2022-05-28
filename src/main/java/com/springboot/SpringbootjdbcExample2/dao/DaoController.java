@@ -58,7 +58,6 @@ private JdbcTemplate template;
 		return emp;
 	}
 
-	@Override
 	public int update(Employee emp) {
 		String[] str = new String[] {emp.getId(),emp.getName(),emp.getLocation(),emp.getProject()};
 		int x=0;
@@ -66,9 +65,7 @@ private JdbcTemplate template;
 		return x;
 	}
 
-	@Override
 	public int updateWithPreparedStatementSetter(Employee emp) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
